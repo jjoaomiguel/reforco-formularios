@@ -1,7 +1,7 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    background-image: linear-gradient(to top left, rgb(185, 197, 241), rgb(138, 151, 204), rgb(145, 158, 211), rgb(125, 140, 201));
+    margin: 0;
+    height: 3000px;
+    transition: background-color 0.1s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
