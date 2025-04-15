@@ -9,6 +9,54 @@
     <title>Reforço de Formulários</title>
 </head>
 <body>
+    <div class="titulo">
+        <h1>Cadastro do Cliente</h1>
+    </div>
+    <form action="" id="clienteForm">
+
+        <label for="primeiroNome">Primeiro Nome:</label><br>
+        <input type="text" name="primeiroNome" id="primeiroNome_cliente" required>
+
+        <br>
+
+        <label for="sobrenome">Sobrenome:</label><br>
+        <input type="text" name="sobrenome" id="sobrenome_cliente" required>
+
+        <br>
+
+        <label for="cpf">CPF:</label><br>
+        <input type="text" name="cpf" id="cpf_maquinista" required>
+
+        <br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" name="idade" id="idade_maquinista" required>
+
+        <br>
+
+        <p>Qual é o seu PET?</p>
+
+        <input type="checkbox" id="pet1_cliente" name="pet1">
+        <label for="pet1"> Gato</label><br>
+
+        <input type="checkbox" id="pet2_cliente" name="pet2">
+        <label for="pet2"> Cachorro</label><br>
+
+        <input type="checkbox" id="pet3_cliente" name="pet3">
+        <label for="pet3"> Hamster</label><br>
+
+        <input type="checkbox" id="pet4_cliente" name="pet4">
+        <label for="pet4"> Calopsita</label><br>
+        
+        <label for="outro">Outro:</label><br>
+        <input type="text" name="outro" id="outro_cliente" required>
+
+        <br>
+        <br>
+
+        <button type="button" onclick="validarFormulario()">Enviar</button>
+
+    </form>
     
 </body>
 </html>
