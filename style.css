@@ -1,11 +1,95 @@
 body {
     margin: 0;
-    height: 3000px;
+    height: 2200px;
     transition: background-color 0.1s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    position: relative;
+    font-weight: bold;
 }
 
-#titulo {
-    color: black;
+#separacao {
+    margin: 300px;
+    padding: 2px;
+    border: 50px;
+    background-color: rgb(70, 115, 237);
+    font-family: 'Bold Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgb(9, 34, 143);
+    box-shadow: 0 0 3px rgb(9, 34, 143), 0 0 6px rgb(9, 34, 143), 0 0 10px rgb(9, 34, 143);
+}
+
+.titulo {
+    margin: 20px;
+    padding: 2px;
+    border: 50px;
+    background-color: rgb(9, 34, 143);
+    font-family: 'Bold Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.imagem-fixa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 330px;
+    height: 330px;
+    background-image: url('img/submarino.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.conteudo {
+    padding: 50px;
+    z-index: 2;
+    position: relative;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 500px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(9, 34, 143);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(5, 18, 75);
+}
+
+button:focus {
+    outline: none;
 }

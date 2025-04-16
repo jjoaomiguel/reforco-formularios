@@ -11,80 +11,83 @@
 </head>
 
 <body>
-    <div class="titulo">
-        <h1>Cadastro para Embarcar!</h1>
+    <div class="conteudo">
+        <div id="separacao">
+            <div class="titulo">
+                <h1>Cadastro para Embarcar!</h1>
+            </div>
+            <div class="formulario">
+                <form action="" id="cadastroSubmarino">
+
+                    <label for="primeiroNome">Primeiro Nome:</label><br>
+                    <input class="estilo" type="text" name="primeiroNome" id="primeiroNome_cadastro" required>
+
+                    <br>
+
+                    <label for="sobrenome">Sobrenome:</label><br>
+                    <input type="select" name="sobrenome" id="sobrenome_cadastro" required>
+
+                    <br>
+
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" name="cpf" id="cpf_cadastro" required>
+
+                    <br>
+
+                    <label for="idade">Idade:</label><br>
+                    <input type="number" name="idade" id="idade_cadastro" required>
+
+                    <br>
+
+                    <label for="dataNasc">Data de Nascimento:</label><br>
+                    <input class="estilo" type="date" name="dataNasc" id="dataNasc_cadastro" required>
+
+                    <br>
+
+                    <label for="genero">Choose a car:</label>
+                    <select id="genero_cadastro" name="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                        <option value="prefiro">Prefiro não dizer</option>
+                    </select>
+
+                    <br>
+
+                    <label for="email">E-mail:</label><br>
+                    <input class="estilo" type="email" name="email" id="email_cadastro" required>
+
+                    <br>
+
+                    <label for="telefone">Telefone:</label><br>
+                    <input class="estilo" type="tel" name="telefone" id="telefone_cadastro" required>
+
+                    <br>
+
+                    <label for="nacionalidade">Nacionalidade:</label><br>
+                    <input class="estilo" type="text" name="nacionalidade" id="nacionalidade_cadastro" required>
+
+                    <br>
+
+                    <label for="numPassaporte">Número do Passaporte:</label><br>
+                    <input class="estilo" type="text" name="numPassaporte" id="numPassaporte_cadastro" required>
+
+                    <br>
+
+                    <label for="valiPassaporte">Validade do Passaporte:</label><br>
+                    <input class="estilo" type="date" name="valiPassaporte" id="valiPassaporte_cadastro" required>
+
+                    <br>
+
+                    <button type="button" onclick="validarFormulario()">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+        <p style="margin-top: 1500px;"></p>
     </div>
-    <form action="" id="cadastroSubmarino">
 
-        <label for="primeiroNome">Primeiro Nome:</label><br>
-        <input type="text" name="primeiroNome" id="primeiroNome_cadastro" required>
-
-        <br>
-
-        <label for="sobrenome">Sobrenome:</label><br>
-        <input type="select" name="sobrenome" id="sobrenome_cadastro" required>
-
-        <br>
-
-        <label for="cpf">CPF:</label><br>
-        <input type="text" name="cpf" id="cpf_cadastro" required>
-
-        <br>
-
-        <label for="idade">Idade:</label><br>
-        <input type="number" name="idade" id="idade_cadastro" required>
-
-        <br>
-
-        <label for="dataNasc">Data de Nascimento:</label><br>
-        <input type="date" name="dataNasc" id="dataNasc_cadastro" required>
-
-        <br>
-
-        <p>Gênero:</p>
-        <input type="radio" name="masculino" id="genero_cadastro">
-        <label for="masculino">Masculino</label><br>
-
-        <input type="radio" name="feminino" id="genero_cadastro">
-        <label for="feminino">Feminino</label><br>
-
-        <input type="radio" name="outro" id="genero_cadastro">
-        <label for="outro">Outro</label><br>
-
-        <input type="radio" name="prefiro" id="genero_cadastro">
-        <label for="prefiro">Prefiro não dizer</label><br>
-
-        <br>
-
-        <label for="email">E-mail:</label><br>
-        <input type="email" name="email" id="email_cadastro" required>
-
-        <br>
-
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" name="telefone" id="telefone_cadastro" required>
-
-        <br>
-
-        <label for="nacionalidade">Nacionalidade:</label><br>
-        <input type="text" name="nacionalidade" id="nacionalidade_cadastro" required>
-
-        <br>
-
-        <label for="numPassaporte">Número do Passaporte:</label><br>
-        <input type="text" name="numPassaporte" id="numPassaporte_cadastro" required>
-
-        <br>
-
-        <label for="valiPassaporte">Validade do Passaporte:</label><br>
-        <input type="date" name="valiPassaporte" id="valiPassaporte_cadastro" required>
-
-        <br>
-
-        <button type="button" onclick="validarFormulario()">Enviar</button>
-
-    </form>
-
+    <div class="imagem-fixa"></div>
 </body>
 
 </html>
