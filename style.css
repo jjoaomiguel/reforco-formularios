@@ -61,7 +61,7 @@ label {
 
 input {
     width: 500px;
-    padding: 8px;
+    padding: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -74,7 +74,6 @@ form {
 .formulario {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 button {
@@ -92,4 +91,11 @@ button:hover {
 
 button:focus {
     outline: none;
+}
+
+.tipoRadio {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
 }
