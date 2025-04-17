@@ -12,6 +12,16 @@
 </head>
 
 <body>
+<header>
+    <div id="navbar">
+
+        <div id="navbar">
+            <img id="icone" src="img/logo.png" alt="Logo Submarino">
+            <h1 class="titulo1"> SUBMARINO DOS MILIONÁRIOS! </h1>
+        </div>
+</header>
+
+
     <div class="conteudo">
         <div id="separacao">
             <div class="titulo">
@@ -26,7 +36,7 @@
                     <br>
 
                     <label for="sobrenome">Sobrenome:</label>
-                    <input type="select" name="sobrenome" id="sobrenome_cadastro" required>
+                    <input type="text" name="sobrenome" id="sobrenome_cadastro" required>
 
                     <br>
 
@@ -70,13 +80,13 @@
 
                     <br>
 
-                    <label for="numPassaporte">Número do Passaporte:</label>
-                    <input type="text" name="numPassaporte" id="numPassaporte_cadastro" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha_cadastro" required>
 
                     <br>
 
-                    <label for="valiPassaporte">Validade do Passaporte:</label>
-                    <input type="date" name="valiPassaporte" id="valiPassaporte_cadastro" required>
+                    <label for="confirmSenha">Confirme sua senha:</label>
+                    <input type="password" name="confirmSenha" id="confirmSenha_cadastro" required>
 
                     <br>
 
@@ -127,14 +137,71 @@
 
                     <br>
 
-                    <div class="tipoRadio">
+                    <div class="tipoRadioeCheckBox">
                         <p>Já participou de viagens subaquáticas?</p>
-                        <input type="radio" id="sim_cadstro" name="sim" value="sim">
-                        <label for="sim">Sim</label>
+                        <input type="radio" id="answer2_cadastro" name="answer">
+                        <label for="answer1">Sim</label><br>
 
-                        <input type="radio" id="nao_cadastro" name="nao" value="nao">
-                        <label for="não">Não</label>
+                        <input type="radio" id="answer2_cadastro" name="answer">
+                        <label for="answer2">Não</label><br>  
                     </div>
+
+                    <br>
+
+                    <label for="escolhaPacote">Escolha seu pacote:</label>
+                    <select id="escolhaPacote_cadastro" name="escolhaPacote">
+                        <option value="Turismo">Turismo</option>
+                        <option value="Científico">Científico</option>
+                        <option value="VIP">VIP</option>
+                        <option value="Alien Tour">Alien Tour</option>
+                    </select>
+
+                    <br>
+
+                    <label for="acompanhantes">Número de acompanhantes:</label>
+                    <input type="number" name="acompanhantes" id="acompanhantes_cadastro" required>
+
+                    <br>
+
+                    <label for="corSubmarino">Qual cor de submarino você deseja embarcar?</label>
+                    <input type="color" id="corSubmarino_cadastro" name="corSubmarino" value="#ff0000">
+
+                    <br>
+
+                    <label for="corTraje">Cor do traje de mergulho desejado:</label>
+                    <input type="color" id="corTraje_cadastro" name="corTraje" value="#ff0000">
+
+                    <br>
+
+                    <label for="horario">Horário ideal de embarque:</label>
+                    <input type="time" name="horario" id="horario_cadastro" required>
+
+                    <br>
+
+                    <label for="pagamento">Forma de pagamento:</label>
+                    <select id="pagamento_cadastro" name="pagamento">
+                        <option value="Cartão">Cartão</option>
+                        <option value="Pix">Pix</option>
+                        <option value="Boleto">Boleto</option>
+                        <option value="Créditos Lunares">Créditos Lunares</option>
+                    </select>
+
+                    <br>
+
+                    <div class="tipoRadioeCheckBox">
+                    <p>Aceita os Termos e Condições?</p>
+                    <input type="checkbox" id="resposta1_cadastro" name="resposta1">
+                    <label for="resposta1"> Sim</label><br>
+
+                    <input type="checkbox" id="resposta2_cadastro" name="resposta2" value="Car">
+                    <label for="resposta2"> Não</label><br>
+                    </div>
+
+                    <br>
+
+                    <label for="foto">Foto de identificação (upload):</label>
+                    <input type="file" id="foto_cadastro" name="foto"><br><br>
+
                     <br>
                     <br>
 
