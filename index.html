@@ -12,14 +12,14 @@
 </head>
 
 <body>
-<header>
-    <div id="navbar">
-
+    <header>
         <div id="navbar">
-            <img id="icone" src="img/logo.png" alt="Logo Submarino">
-            <h1 class="titulo1"> SUBMARINO DOS MILIONÁRIOS! </h1>
-        </div>
-</header>
+
+            <div id="navbar">
+                <img id="icone" src="img/logo.png" alt="Logo Submarino">
+                <h1 class="titulo1"> SUBMARINO DOS MILIONÁRIOS! </h1>
+            </div>
+    </header>
 
 
     <div class="conteudo">
@@ -132,19 +132,32 @@
                     </select>
                     <br>
 
-                    <label for="nivel">Nível de claustrofobia (1 a 10):</label>
-                    <input type="range" id="nivel_cadastro" name="nivel" min="0" max="10">
-
                     <br>
 
                     <div class="tipoRadioeCheckBox">
                         <p>Já participou de viagens subaquáticas?</p>
-                        <input type="radio" id="answer2_cadastro" name="answer">
+                        <input type="radio" id="answer1_cadastro" name="answer">
                         <label for="answer1">Sim</label><br>
 
                         <input type="radio" id="answer2_cadastro" name="answer">
-                        <label for="answer2">Não</label><br>  
+                        <label for="answer2">Não</label><br>
                     </div>
+
+                    <br>
+
+                    <div class="tipoRadioeCheckBox">
+                        <p>Já tem certificado de mergulho?</p>
+                        <input type="radio" id="respostaa1_cadastro" name="respostaa">
+                        <label for="respostaa1">Sim</label><br>
+
+                        <input type="radio" id="respostaa2_cadastro" name="respostaa">
+                        <label for="respostaa2">Não</label><br>
+                    </div>
+
+                    <br>
+
+                    <label for="nivel">Nível de claustrofobia (1 a 10):</label>
+                    <input type="range" id="nivel_cadastro" name="nivel" min="0" max="10">
 
                     <br>
 
@@ -188,13 +201,18 @@
 
                     <br>
 
-                    <div class="tipoRadioeCheckBox">
-                    <p>Aceita os Termos e Condições?</p>
-                    <input type="checkbox" id="resposta1_cadastro" name="resposta1">
-                    <label for="resposta1"> Sim</label><br>
+                    <label for="horario">Horário ideal de embarque:</label>
+                    <input type="time" name="horario" id="horario_cadastro" required>
 
-                    <input type="checkbox" id="resposta2_cadastro" name="resposta2" value="Car">
-                    <label for="resposta2"> Não</label><br>
+                    <br>
+
+                    <div class="tipoRadioeCheckBox">
+                        <p>Aceita os Termos e Condições?</p>
+                        <input type="checkbox" id="resposta1_cadastro" name="resposta1">
+                        <label for="resposta1"> Sim</label><br>
+
+                        <input type="checkbox" id="resposta2_cadastro" name="resposta2" value="Car">
+                        <label for="resposta2"> Não</label><br>
                     </div>
 
                     <br>
