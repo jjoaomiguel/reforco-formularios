@@ -110,12 +110,12 @@
 
                     <br>
 
-                    <label for="altura">Altura:</label>
+                    <label for="altura">Altura (cm):</label>
                     <input type="number" name="altura" id="altura_cadastro" required>
 
                     <br>
 
-                    <label for="peso">Peso:</label>
+                    <label for="peso">Peso (g):</label>
                     <input type="number" name="peso" id="peso_cadastro" required>
 
                     <br>
@@ -136,22 +136,24 @@
 
                     <div class="tipoRadioeCheckBox">
                         <p>Já participou de viagens subaquáticas?</p>
-                        <input type="radio" id="answer1_cadastro" name="answer">
-                        <label for="answer1">Sim</label><br>
 
-                        <input type="radio" id="answer2_cadastro" name="answer">
-                        <label for="answer2">Não</label><br>
+                        <input type="radio" id="viagemSim" name="viagemSub" value="Sim">
+                        <label for="viagemSim">Sim</label><br>
+
+                        <input type="radio" id="viagemNao" name="viagemSub" value="Não">
+                        <label for="viagemNao">Não</label><br>
                     </div>
 
                     <br>
 
                     <div class="tipoRadioeCheckBox">
                         <p>Já tem certificado de mergulho?</p>
-                        <input type="radio" id="respostaa1_cadastro" name="respostaa">
-                        <label for="respostaa1">Sim</label><br>
 
-                        <input type="radio" id="respostaa2_cadastro" name="respostaa">
-                        <label for="respostaa2">Não</label><br>
+                        <input type="radio" id="certSim" name="certificado" value="Sim">
+                        <label for="certSim">Sim</label><br>
+
+                        <input type="radio" id="certNao" name="certificado" value="Não">
+                        <label for="certNao">Não</label><br>
                     </div>
 
                     <br>
@@ -208,11 +210,9 @@
 
                     <div class="tipoRadioeCheckBox">
                         <p>Aceita os Termos e Condições?</p>
-                        <input type="checkbox" id="resposta1_cadastro" name="resposta1">
-                        <label for="resposta1"> Sim</label><br>
 
-                        <input type="checkbox" id="resposta2_cadastro" name="resposta2" value="Car">
-                        <label for="resposta2"> Não</label><br>
+                        <input type="checkbox" id="aceitaTermos" name="aceitaTermos">
+                        <label for="aceitaTermos"> Sim, aceito os termos.</label><br>
                     </div>
 
                     <br>
