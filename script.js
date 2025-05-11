@@ -187,11 +187,11 @@ function validarFormulario() {
         console.log('Nível de claustrofobia:', nivel);
     }
 
-    if (!pacote) {
+    if (!pacoteEscolhido) {
         alert('Por favor, selecione um pacote.');
         return;
     } else {
-        console.log(pacote);
+        console.log(pacoteEscolhido);
     }
 
     if (isNaN(acompanhantes) || acompanhantes < 0) {
@@ -222,11 +222,11 @@ function validarFormulario() {
         console.log(horario);
     }
 
-    if (!pagamento) {
+    if (!formaPagamento) {
         alert('Por favor, selecione a forma de pagamento.');
         return;
     } else {
-        console.log(pagamento);
+        console.log(formaPagamento);
     }
 
     if (!aceitaTermos.checked) {
